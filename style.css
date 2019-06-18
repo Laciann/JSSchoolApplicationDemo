@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("summer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    position: absolute;
+}
+
+.container {
+    height: 540px;
+    width: 100%;
+    margin: 3% auto;
+    opacity: 1.9;
+}
+
+.date {
+    position: relative;
+    text-align: right;
+    height: 100px;
+    width: 100%;
+    align-content: right;
+    justify-content: right;
+}
+
+.to {
+    position: relative;
+    text-align: left;
+    top: -90px;
+    width: 140px;
+}
+
+.subject {
+    margin-top: -5%;
+    width: 60%;
+    text-align: right;
+    margin-left: 20%;
+}
+
+#leavesubject {
+    width: 280px;
+}
+
+.letter {
+    margin-top: 2%;
+    margin-left: 10%;
+    line-height: 1.5rem;
+}
+
+input {
+    height: 25px;
+    width: 150px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgb(74, 237, 243);
+    background: transparent;
+    color: rgb(209, 19, 114);
+    padding: 11px;
+}
+
+input::placeholder {
+    color: rgb(0, 228, 209);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.thank {
+    position: relative;
+    text-align: right;
+    height: 100px;
+    width: 100%;
+    align-content: right;
+    justify-content: right;
+}
+
+button {
+    height: 60px;
+    width: 120px;
+    margin-top: -2%;
+    outline: none;
+    border: none;
+    margin-left: 30%;
+    background: rgb(157, 214, 197);
+    color: crimson;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    transition: all 0.7s ease;
+    background: crimson;
+    color: white;
+}
+

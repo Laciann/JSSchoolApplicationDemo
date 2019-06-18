@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Leave Application</title>
+  <link rel="stylesheet" href="style.css" />
+  <style type="text/css" media="print">
+    @page {
+      size: A4 Landscape;
+      margin-top: 1cm;
+      margin-bottom: 1cm;
+    }
+
+    @media print {
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <div class="date">
+        Date:<input type="text" name="date" id="appdate" placeholder="Date" autocomplete="off" /><br />
+        Address:
+        <input type="text" autocomplete="off" name="address" id="address" placeholder="Address" />
+      </div>
+      <div class="to">
+        To, <br />
+        The Principal <br /><input type="text" id="school-name" autocomplete="off"
+          placeholder="XYZ school" />School,<input type="text" id="school-add" placeholder="Address"
+          autocomplete="off " />
+        <br />
+      </div>
+      <div class="subject">
+        Subject:
+        <input type="text" name="subject" id="leavesubject" autocomplete="off" placeholder="Enter subject" />
+      </div>
+
+      <div class="letter">
+        Respected Sir,
+        <p>
+          Respectfully I want to say that I was suffering from
+          <input type="text" id="reason" autocomplete="off" placeholder="Reason" />
+          for last
+          <input type="text" id="day" autocomplete="off" placeholder="two" />
+          days from
+          <input type="text" id="date-from" autocomplete="off" placeholder="Date" />
+          to
+          <input type="text" id="date-to" autocomplete="off" placeholder="Date" />
+          . During this period I could not attend the school.
+        </p>
+        <p>
+          <br />
+          I, therefore, request you kindly grant me a leave of
+          <input type="text" id="lastdate" autocomplete="off" placeholder="two" />
+          days and oblige.
+        </p>
+        <div class="thank">
+          Thanking you, <br />
+          Yours obediently <br />
+          <input type="text" name="name" placeholder="Name" autocomplete="off" id="stdname" />
+          <br />
+          <input type="text" id="roll" placeholder="02" autocomplete="off" />
+        </div>
+      </div>
+      <div style="margin-top:400px">
+        <button type="submit" id="submit">Submit</button>
+        <button type="submit" onClick="window.print()">Print</button>
+      </div>
+
+    </div>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

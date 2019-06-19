@@ -40,6 +40,7 @@ result.addEventListener('click', function (e) {
       Insert('roll');
 
       e.preventDefault();
+      document.getElementById('print').style.display = 'inline';
      
 });
 

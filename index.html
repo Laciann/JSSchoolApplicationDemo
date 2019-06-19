@@ -26,7 +26,7 @@
         display: none;
       }
 
-     @page{size:auto; margin-bottom:5mm;}
+     @page{ size: auto; margin-top: 0mm; margin-bottom: 0mm;}
 
     }
   </style>
@@ -81,7 +81,7 @@
       </div>
       <div class="hide-in-print">
         <button type="submit" id="submit">Submit</button>
-        <button type="submit" onClick="window.print()">Print</button>
+        <button type="submit" onClick="window.print()" id="print" style="display:none;">Print</button>
       </div>
 
     </div>
